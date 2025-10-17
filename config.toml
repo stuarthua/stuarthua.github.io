@@ -5,7 +5,7 @@ theme = "puff"
 DefaultContentLanguage = "cn"
 enableRobotsTXT = false
 canonifyURLs = false
-googleAnalytics = "UA-55082727-2"
+googleAnalytics = "G-XXXXXXXXXX"
 
 [markup]
   [markup.goldmark]
@@ -33,13 +33,13 @@ googleAnalytics = "UA-55082727-2"
   [[menu.main]]
     identifier = "categories"
     url = "/categories/"
-    name = "Categories"
+    name = "分类"
     title = "Categories"
     weight = 1
   [[menu.main]]
     identifier = "about"
     url = "/about/"
-    name = "About"
+    name = "关于"
     title = "About"
     weight = 2
 

@@ -11,7 +11,6 @@ draft: false
 
 * [GitHub](https://github.com/stuarthua)
 * [Email](mailto:stuarthua@duck.com)
-* <a target="_blank" href="https://keybase.io/stuarthua#_">Keybase.io</a>
 
 ### Freedom
 
