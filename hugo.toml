@@ -44,7 +44,7 @@ canonifyURLs = true
 
 [services]
   [services.googleAnalytics]
-    id = 'G-S1PDL8VX4B' # google analytics code
+    id = 'G-0C4YPZD2HX' # google analytics code
   [services.disqus]
     shortname = 'stuarthua' # disqus account name
 
