@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: false  # 不使用 submodules，让 Hugo 模块系统处理依赖
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
@@ -43,10 +43,16 @@ jobs:
         with:
           hugo-version: '0.134.1'
           extended: true
+      - name: Clean Hugo modules
+        run: |
+          rm -rf ~/.cache/hugo_cache
+          hugo mod clean
       - name: Get Hugo modules
         run: |
           hugo mod get -u
           hugo mod tidy
+      - name: List modules
+        run: hugo mod graph
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
