@@ -13,7 +13,7 @@ hugo mod tidy
 
 ## Usage
 
-update theme:
+update theme - [hugo-theme-puff](https://github.com/stuarthua/hugo-theme-puff):
 
 ```shell
 hugo mod get -u
