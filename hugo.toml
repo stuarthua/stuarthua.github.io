@@ -1,0 +1,93 @@
+baseURL = "https://blog.stuarthua.com"
+title = "StuartHua's Blog"
+languageCode = "en-us"
+DefaultContentLanguage = "cn"
+enableRobotsTXT = false
+canonifyURLs = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/stuarthua/hugo-theme-puff"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[permalinks]
+  post = "/blog/:title/"
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    weight = 1
+  [languages.cn]
+    contentDir = "content/cn"
+    weight = 1
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    url = "/categories/"
+    name = "categories"
+    weight = 10
+  [[menu.main]]
+    identifier = "tag"
+    url = "/tags/"
+    name = "tags"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    url = "/about/"
+    name = "about"
+    weight = 30
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-S1PDL8VX4B' # google analytics code
+  [services.disqus]
+    shortname = 'stuarthua' # disqus account name
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = false
+  [privacy.disqus]
+    disable = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.x]
+    disable = false
+    enableDNT = false
+    simple = false
+
+[params]
+favicon = "/images/logo.png"
+description = "Software Developer, Life Adventurer"
+mainSections = ["posts", "categories", "tags"]
+extraHead = ''
+extraBody = ''
+postHeaderContent = ''
+postFooterContent = '<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc.png" /></a>'
+lazyImage = true
+twitterCards = true
+  [params.author]
+    name = "stuarthua"
+    homepage = "https://stuarthua.com/"
+  [[params.socials]]
+    name = "rss"
+    link = "/index.xml"
+  [[params.socials]]
+    name = "gallery"
+    link = "/gallery/"
+  [[params.socials]]
+    name = "StuartHua"
+    link = "https://stuarthua.com"
+  # [[params.socials]]
+  #   name = "travel"
+  #   link = "/travel/"
+  # [[params.socials]]
+  #   name = "LinuxMind"
+  #   link = "/linux-mind/"

@@ -4,7 +4,28 @@
 
 * [https://blog.stuarthua.com/](https://blog.stuarthua.com/)
 
+## Init
+
+```shell
+hugo mod init my-site.local
+hugo mod tidy
+```
+
 ## Usage
+
+update theme:
+
+```shell
+hugo mod get -u
+```
+
+run server:
+
+```shell
+hugo server -D
+```
+
+## Deploy
 
 `GitHub Action`
 

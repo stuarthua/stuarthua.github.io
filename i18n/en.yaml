@@ -1,0 +1,8 @@
+- id: rss
+  translation: "RSS"
+
+- id: gallery
+  translation: "Gallery"
+
+- id: travel
+  translation: "Travel"
