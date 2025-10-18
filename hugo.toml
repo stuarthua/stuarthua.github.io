@@ -73,6 +73,9 @@ postHeaderContent = ''
 postFooterContent = '<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc.png" /></a>'
 lazyImage = true
 twitterCards = true
+googleAdsense = true
+googleAdsenseClientId = "ca-pub-4430279915750867"
+googleAdsenseSlotId = "1725357277"
   [params.author]
     name = "stuarthua"
     homepage = "https://stuarthua.com/"
